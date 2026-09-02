@@ -112,6 +112,15 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+        
+        {/* Datafa.st Tracking Script Added Here */}
+        <script
+          defer
+          data-website-id="dfid_9kswMRooxNJ4o5vpLBGYw"
+          data-domain="javaholic-five.vercel.app"
+          src="https://datafa.st/js/script.js"
+        ></script>
+        
       </head>
       <body>
         {children}
@@ -120,7 +129,6 @@ function RootShell({ children }: { children: ReactNode }) {
     </html>
   );
 }
-
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
